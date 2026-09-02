@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "@fontsource/jetbrains-mono/600.css";
+@import "@fontsource/jetbrains-mono/700.css";
+
+@theme {
+  --font-sans: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --color-background: #0a0b0d;
+  --color-surface: #121419;
+  --color-surface-hover: #181b22;
+  --color-foreground: #e6e8eb;
+  --color-muted: #8b94a3;
+  --color-accent: #3ddc97;
+  --color-accent-strong: #5ef2ae;
+  --color-border: #262a33;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
